@@ -8,3 +8,9 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+# Exercise 5: Calculations
+puts (Store.sum("annual_revenue"))
+puts (Store.average("annual_revenue"))
+qry = { annual_revenue: 1000000 }
+puts (Store.where("annual_revenue > ?", qry[:annual_revenue]).count)
